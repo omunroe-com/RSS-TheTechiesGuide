@@ -1,0 +1,23 @@
+{
+  "manifest_version" : 2,
+  "name": "RSS Fetcher",
+  "version": "0.1",
+
+  "description": "Keep up with the TheTechiesGuide.",
+  "icons": { "16" : "images/icon.png",
+ 			"48" : "images/48.png",
+			"128" : "images/128.png"},
+  "homepage_url": "http://thetechiesguide.com/",
+	"background": {
+    "page" : "background.html" },
+	"permissions": [
+	  "https://feeds.feedburner.com/*"
+	],
+	"browser_action": {
+    "default_icon": "images/icon.png", 
+    "default_title": "TheTechiesGuide Notifier",      
+    "default_popup": "popup.html"       
+  }
+}
+
+//http://feeds.feedburner.com/TheTechiesGuide
